@@ -8,8 +8,9 @@ package org.ryan;
  * @wersion 1.0
  */
 public class DynamicAlgorithm {
+    /**物品价值*/
     private static int[] value = {0,1500,3000,2000};
-
+    /**物品重量*/
     private static int[] weight = {0,1,4,3};
 
     public static void main(String[] args) {
@@ -17,6 +18,13 @@ public class DynamicAlgorithm {
         System.out.println(num);
     }
 
+    /**
+     * @Author Ryan
+     * 动态规划实现小偷偷东西最大价值
+     * @Date 7:34 2021/4/13 0013
+     * @Param [w, m, weight, value]
+     * @return int
+     */
     public static int stole(int w, int m,int[] weight,int[] value) {
         int[][] mw = new int[m + 1][w + 1];
         for (int i = 0; i < m + 1; i++) {
