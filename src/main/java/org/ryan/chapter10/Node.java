@@ -40,11 +40,6 @@ public class Node {
                     return true;//二叉树插入数据成功，插入到左叶子节点
                 }
             }else if (current.data < node.getData()) {
-                Node currentParent = current.parentNode;
-                //TODO 待完成
-//                if (currentParent.data < node.getData()) {//查询当前节点的父节点的数据是否小于此数
-//
-//                }
                 if (current.getRightNode() != null) {
                     current = current.rightNode;
                 }else {
